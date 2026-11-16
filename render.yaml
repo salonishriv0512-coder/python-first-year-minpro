@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: model-cost-performance
+    runtime: python
+    plan: free
+    buildCommand: python -m compileall -q web_app.py
+    startCommand: python web_app.py
+    healthCheckPath: /api/state
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: AUTO_OPEN_BROWSER
+        value: "0"
