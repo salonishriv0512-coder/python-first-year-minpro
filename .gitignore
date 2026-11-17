@@ -1,0 +1,4 @@
+__pycache__/
+telemetry.sqlite3
+telemetry.sqlite3-shm
+telemetry.sqlite3-wal
